@@ -1,9 +1,10 @@
 /*
 ** EPITECH PROJECT, 2023
-** main.cpp
+** FileName
 ** File description:
-** This is the main function of this project
+** FileDescription
 */
+
 
 #include <iostream>
 #include "my.hpp"

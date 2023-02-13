@@ -13,15 +13,19 @@ DIR	=	src/
 
 DIR_TEST	=	tests/
 
-DIR_INC	=	include/
+DIR_INC = include/
 
-SRC	=	$(DIR)main.c
+SRC	=	main.c
+
+SRC_PATHS	=	$(addprefix $(DIR), $(SRC))
 
 SRC_TEST	=	$(DIR_TEST)unit_tests.c
 
-OBJ	=	$(SRC:.c=.o)
+OBJ	=	$(SRC_PATHS:.c=.o)
 
-CPPFLAGS	=	-std=gnu17 -Wall -Wextra -Werror -I$(DIR_INC)
+INCLUDE	=	-I$(DIR_INC)
+
+CPPFLAGS	=	-std=gnu17 -Wall -Wextra -Werror $(INCLUDE)
 
 LDFLAGS_TEST = --coverage -lcriterion
 
@@ -51,7 +55,7 @@ $(NAME):	$(OBJ)
 	$(CC) -o $(NAME) $(OBJ) $(CPPFLAGS) $(LDFLAGS)
 
 tests_run:
-	$(CC) -o $(NAME_TEST) $(SRC) $(SRC_TEST) $(CPPFLAGS) $(LDFLAGS_TEST)
+	$(CC) -o $(NAME_TEST) $(SRC_PATHS) $(SRC_TEST) $(CPPFLAGS) $(LDFLAGS_TEST)
 	$(RM) *.gc*
 	./$(NAME_TEST)
 	$(RM) *.gc*

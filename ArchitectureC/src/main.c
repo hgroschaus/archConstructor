@@ -1,15 +1,15 @@
 /*
 ** EPITECH PROJECT, 2023
-** main.cpp
+** FileName
 ** File description:
-** This is the main function of this project
+** FileDescription
 */
 
-#include <stdio.h>
 #include "my.h"
+#include <stdio.h>
 
 int main(void)
 {
-    printf("Hello World");
+    printf("Hello World\n");
     return 0;
 }
