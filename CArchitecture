@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dirPath=".script/archConstructor"
+cp -r $HOME/$dirPath/ArchitectureC/* .
+cp -r $HOME/$dirPath/.gitignore .
