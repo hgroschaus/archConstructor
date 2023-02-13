@@ -25,5 +25,7 @@ You can now move the scripts in the /bin folder to be able to use the scripts an
 
 After restarting your terminal window you'll be able to use the constructors !
 
+![image](https://user-images.githubusercontent.com/91555623/218454826-8a44b51f-3c61-4ba7-a3f6-9ca9e5f9a576.png)
+
 
 # Thank you for using my script ! #
