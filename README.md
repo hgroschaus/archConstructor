@@ -27,5 +27,5 @@ After restarting your terminal window you'll be able to use the constructors !
 
 ![image](https://user-images.githubusercontent.com/91555623/218454826-8a44b51f-3c61-4ba7-a3f6-9ca9e5f9a576.png)
 
-
+Don't forget to change the .gitignorefile content if needed
 # Thank you for using my script ! #
